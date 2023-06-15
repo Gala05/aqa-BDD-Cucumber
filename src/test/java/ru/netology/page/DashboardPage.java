@@ -37,7 +37,7 @@ public class DashboardPage {
         $("[data-test-id='action-transfer']").click();
     }
 
-    public boolean getFirstCardBalance1(String firstCard, String sum) {
+    public boolean getFirstCardBalance1(String sum) {
         val text = cards.first().text();
         extractBalance(text);
         if (!text.equals(sum)) {

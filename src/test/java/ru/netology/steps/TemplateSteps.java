@@ -42,8 +42,8 @@ public class TemplateSteps {
         dashboardPage.makeTransfer1(sum, secondCard);
     }
 
-    @Тогда("баланс его карты {string} из списка на главной странице должен стать {string} рублей")
-    public void finalResult (String firstCard, String sum) {
-        dashboardPage.getFirstCardBalance1(firstCard, sum);
+    @Тогда("баланс его 1 карты из списка на главной странице должен стать {string} рублей")
+    public void finalResult (String sum) {
+        dashboardPage.getFirstCardBalance1(sum);
     }
 }
